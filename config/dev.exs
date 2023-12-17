@@ -2,8 +2,8 @@ import Config
 
 # Configure your database
 config :github_clone, GithubClone.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "backend",
+  password: "170520210921",
   hostname: "localhost",
   database: "github_clone_dev",
   stacktrace: true,
