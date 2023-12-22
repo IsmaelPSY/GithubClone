@@ -8,6 +8,9 @@ defmodule GithubClone.Accounts.User do
     field :password, :string, virtual: true, redact: true
     field :hashed_password, :string, redact: true
     field :confirmed_at, :naive_datetime
+    has_many(:gists, GithubClone.Gists.Gist)
+    has_many(:saved_gists, GithubClone.Gists.SavedGist)
+    has_many(:comments, GithubClone.Comments.Comment)
 
     timestamps(type: :utc_datetime)
   end
